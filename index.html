@@ -227,7 +227,7 @@
 </div>
 
 <script>
-  const WEBHOOK_URL = "https://n8n.srv1276802.hstgr.cloud/webhook/visit"; // swap for your Visit + Customer Sync production webhook
+  const WEBHOOK_URL = "https://n8n.srv1276802.hstgr.cloud/webhook/demo/activity"; // swap for your Visit + Customer Sync production webhook
 
   const phoneInput = document.getElementById('phone');
   const nameInput = document.getElementById('name');
@@ -283,7 +283,7 @@
     checkinBtn.textContent = 'Recording...';
 
     try{
-      const res = await fetch('https://n8n.srv1276802.hstgr.cloud/webhook/demo/customer-signup'), {
+      const res = await fetch('https://n8n.srv1276802.hstgr.cloud/webhook/demo/activity'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
